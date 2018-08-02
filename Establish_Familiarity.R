@@ -1,13 +1,10 @@
 if(!require('reticulate')) install.packages("reticulate")
 library(reticulate)
-<<<<<<< HEAD
-#use_python("/usr/local/bin/python")
-=======
+
 sys <- import("sys")
 #use_python("/usr/local/bin/python3")
 #use_python("/usr/local/opt/python/bin/python3.7")
 sys$version
->>>>>>> 6d18e87a91951729d538a52ef5fb42a07462b37e
 # https://rstudio.github.io/reticulate/articles/versions.html
 py_config()
 reticulate::py_discover_config()
@@ -45,8 +42,6 @@ py$x
 py_run_file("nltk0_eg3.py")
 py$nltkversion
 
-
-<<<<<<< HEAD
 # Attempt to call chatbots ------------------------------------------------
 
 nltk$chat$chatbots()  # notding happens
@@ -85,7 +80,6 @@ py$r
 
 py$sys$getsizeof(nltk)
 py$sys$getrecursionlimit()
-=======
+
 repl_python()
 nltk$download()
->>>>>>> 6d18e87a91951729d538a52ef5fb42a07462b37e
